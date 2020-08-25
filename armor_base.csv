@@ -1,0 +1,6 @@
+id,name_en,rarity,type,gender,slot_1,slot_2,slot_3,defense_base,defense_max,defense_augment_max,defense_fire,defense_water,defense_thunder,defense_ice,defense_dragon
+1,Leather Headgear,1,head,both,0,0,0,2,38,68,2,0,0,0,0
+2,Leather Mail,1,chest,both,0,0,0,2,38,68,2,0,0,0,0
+3,Leather Gloves,1,arms,both,0,0,0,2,38,68,2,0,0,0,0
+4,Leather Belt,1,waist,both,0,0,0,2,38,68,2,0,0,0,0
+5,Leather Trousers,1,legs,both,0,0,0,2,38,68,2,0,0,0,0

@@ -1,49 +1,107 @@
 #include <iostream>
+#include <fstream>
 #include <string.h>
 
 using namespace std;
 
-
-class Helmet
+enum struct armorType
 {
-    public:
-        double armorValue;
-    
+    HEAD,
+    CHEST,
+    ARMS,
+    WAIST,
+    LEGS
 };
 
-class Gloves
+class Head
 {
     public:
-        double armorValue;
+        armorType type = armorType::HEAD;
+        int armorBase;
+        int armorMax;
+        int slot1;
+        int slot2;
+        int slot3;
+        int fireRes;
+        int waterRes;
+        int thunderRes;
+        int iceRes;
+        int dragonRes;
+
+
 };
 
-class Torso
+class Chest
 {
     public:
-        double armorValue;
+        armorType type = armorType::CHEST;
+        int armorBase;
+        int armorMax;
+        int slot1;
+        int slot2;
+        int slot3;
+        int fireRes;
+        int waterRes;
+        int thunderRes;
+        int iceRes;
+        int dragonRes;
+};
+
+class Arms
+{
+    public:
+        armorType type = armorType::ARMS;
+        int armorBase;
+        int armorMax;
+        int slot1;
+        int slot2;
+        int slot3;
+        int fireRes;
+        int waterRes;
+        int thunderRes;
+        int iceRes;
+        int dragonRes;
+};
+
+class Waist
+{
+    public:
+        armorType type = armorType::WAIST;
+        int armorBase;
+        int armorMax;
+        int slot1;
+        int slot2;
+        int slot3;
+        int fireRes;
+        int waterRes;
+        int thunderRes;
+        int iceRes;
+        int dragonRes;
 };
 
 class Legs
 {
     public:
-        double armorValue;
-};
-
-class Boots
-{
-    public:
-        double armorValue;
+        armorType type = armorType::LEGS;
+        int armorBase;
+        int armorMax;
+        int slot1;
+        int slot2;
+        int slot3;
+        int fireRes;
+        int waterRes;
+        int thunderRes;
+        int iceRes;
+        int dragonRes;
 };
 
 class armorSet
 {
     public:
-        Helmet helmet;        
-        Torso torso;
-        Gloves gloves;
-        Legs legs;
-        Boots boots;
-
-        double armorValue = helmet.armorValue + torso.armorValue + gloves.armorValue + legs.armorValue + boots.armorValue;
+        Head helmet;        
+        Chest torso;
+        Arms gloves;
+        Waist legs;
+        Legs boots;
 
 };
