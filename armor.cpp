@@ -40,7 +40,7 @@ class Head
             std::string line;
 
             // Go to the line of the object ID
-            for(int i=0; i<id; i++)
+            for(int i=0; i<=id; i++)
             {
                 getline(fs, line);
             }
@@ -61,7 +61,7 @@ class Head
             }
             else
             {
-                cout << "Error, armor ID is not of a headgear.";
+                cout << "Error, armor ID is not of a headgear./nID:" << temp;
                 return;
             }
 
@@ -89,6 +89,20 @@ class Head
             dragonRes = stoi(temp);
 
             
+        }
+
+        void printStats()
+        {
+            cout << "Base Amor: " << armorBase << endl;
+            cout << "Max Armor: " << armorMax << endl;
+            cout << "Slot 1: " << slot1 << endl;
+            cout << "Slot 2: " << slot2 << endl;
+            cout << "Slot 3: " << slot3 << endl;
+            cout << "Fire Defense: " << fireRes << endl;
+            cout << "Water Defennse: " << waterRes << endl;
+            cout << "Thunder Defense :" << thunderRes << endl;
+            cout << "Ice Defense: " << iceRes << endl;
+            cout << "Dragon Defense: " << dragonRes << endl;
         }
 };
 
